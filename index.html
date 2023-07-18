@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+  <body>
+    <header class="bg-[#618faf]">
+      <h1 class="text-2xl">Real-Time Transcription Assembly AI and Deepgram</h1>
+      <p class="header__sub-title">Real Time Transcription Endpoint</p>
+    </header>
+    <div class="real-time-interface">
+      <p id="real-time-title" class="real-time-interface__title">
+        Click start to begin recording!
+      </p>
+      <select
+        class="py-2 px-1 rounded-md outline-none"
+        id="transcription-select"
+      >
+        <option selected value="assembly">AssemblyAI</option>
+        <option value="deepgram">Deepgram</option>
+      </select>
+      <button
+        type="button"
+        id="button"
+        class="bg-[#618faf] w-fit rounded-md py-1 px-2 hover:scale-110 transition-all text-white"
+      >
+        Start
+      </button>
+      <p id="message" class="py-2 text-black bg-red-500"></p>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
